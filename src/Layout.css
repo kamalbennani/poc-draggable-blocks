@@ -1,0 +1,31 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  height: 100vh;
+}
+
+.Layout__container {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  background: #d9e0e7;
+}
+
+.Layout__Header {
+  height: 64px;
+  background: #fff;
+}
+
+.Layout__Sidebar {
+  background: #2d353c;
+  width: 170px;
+}
+
+.Layout__Content {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  max-height: 100%;
+  overflow: auto;
+}

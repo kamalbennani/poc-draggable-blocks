@@ -1,0 +1,59 @@
+.Grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Item__Container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  min-height: 354px;
+}
+
+.Item--fullHeight .Item__Container {
+  min-height: 600px;
+}
+
+.Item__Header {
+  position: relative;
+  height: 40px;
+  background: #2d353c;
+  color: #fff;
+}
+
+.GridItem--handle {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  cursor: move;
+}
+
+.Item__Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 60px;
+}
+
+.GridMuuri {
+  position: relative;
+}
+.item {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  margin: 5px 0;
+}
+.item.muuri-item-dragging {
+  z-index: 3;
+}
+.item.muuri-item-releasing {
+  z-index: 2;
+}
+.item.muuri-item-hidden {
+  z-index: 0;
+}
